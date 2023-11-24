@@ -3,18 +3,22 @@
     --mainfont-nexon: "nexonLv1";
   
     --black: #000;
-    --black100: #000;
-    --black200: #000;
+    --black100: #111;
+    --black200: #222;
     --black300: #000;
     --black400: #000;
     --black500: #000;
+
+    --blackAlpha100: #11111125;
     
     --white: #fff;
-    --white100: #fff;
-    --white200: #fff;
+    --white100: #efefef;
+    --white200: #d9d9d9;
     --white300: #fff;
     --white400: #fff;
     --white500: #fff;
+
+    --red: #f00;
     
     // 폰트 셋팅
     font-family: var(--mainfont-nanum), var(--mainfont-nexon);
