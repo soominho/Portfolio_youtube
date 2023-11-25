@@ -2,3 +2,60 @@ body {
     background-color: var(--black);
     color: var(--white);
 }
+
+// 섹션 공통 요소
+section {
+    padding: 40px;
+
+    @media (max-width: 800px) {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+// 마우스 오버 아이콘
+.play__icon {
+    a {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        width: 100%;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: var(--blackAlpha200);
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: background-color 0.3s;
+        }
+
+        &:hover::before {
+            background-color:var(--blackAlpha);
+        }
+
+        &::after {
+            content: '';
+            width: 80px;
+            height: 80px;
+            background: var(--blackAlpha400) url(../../img/icon/play.svg) no-repeat center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        &:hover::after {
+            opacity: 1;
+        }
+    }
+}

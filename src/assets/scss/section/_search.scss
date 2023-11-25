@@ -25,3 +25,24 @@
         color: var(--white);
     }
 }
+
+@media (max-width: 800px) {
+    .search__inner {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: var(blackAlpha400);
+        backdrop-filter: blur(10px);
+        padding: 17px 20px 17px 200px;
+
+        label {
+            left: 213px;
+        }
+
+        input {
+            padding: 14px 14px 14px 45px;
+        }
+    }
+}
