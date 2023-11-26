@@ -4,11 +4,14 @@ import Today from '../components/contents/Today'
 import Devloper from '../components/contents/Developer'
 import VideoSlider from '../components/video/VideoSlider'
 
+import { todayText } from '../data/today'
+import { developerText } from '../data/developer'
 import { webdText } from '../data/webd'
 import { websiteText } from '../data/website'
 import { gsapText } from '../data/gsap'
 import { portfolioText } from '../data/portfolio'
 import { youtubeText } from '../data/youtube'
+
 
 const Home = () => {
     return (
@@ -16,8 +19,8 @@ const Home = () => {
             title = "웹스토리보이 유튜브"
             description="웹스토리보이 유튜버 사이트에 오신 것을 환영합니다.">
             
-            <Today />
-            <Devloper />
+            <Today videos={todayText} id='today' />
+            <Devloper videos={developerText} title='😪 추천 개발자를 소개합니다.' id='developer' />
             <VideoSlider videos={webdText} title='😮 웹디자인기능사 준비는 이걸로!' id='webd' />
             <VideoSlider videos={websiteText} title='😛 웹표준 사이트 만들기 기초 다지기' id='website' />
             <VideoSlider videos={gsapText} title='🤓 GSAP 패럴랙스 효과를 하고 싶다면!' id='gsap' />
